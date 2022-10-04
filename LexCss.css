@@ -13,8 +13,7 @@ html{
 }
 /*------*/
 
-header{
-    
+header{ 
     margin:3vw auto;
     display: flex;
     position: relative;
@@ -22,9 +21,6 @@ header{
     max-width: 76%;
     justify-content: space-between;
     align-items: flex-end;
-    
-    
-
 }
 .title{
     margin: 1vw 0.5vw 0 0.5vw;
@@ -39,14 +35,13 @@ header{
     padding-left: 0.5vw;
 }
 
-header ul{
-    
-    display: flex;
-    justify-content: space-between;
-    
+a{
+    text-decoration: none;
+}
 
-    
-    
+header ul{ 
+    display: flex;
+    justify-content: space-between;   
 }
 
 header li{
@@ -60,6 +55,7 @@ main{
     width: 90vw;
     margin: 10vw auto 5vw auto;
     height: auto;
+    
 }
 article{
     width: 100%;
@@ -126,10 +122,11 @@ footer i{
 }
 
 @media ( max-width:800px ) { html{ font-size: 0.9rem;}
-                        main section{ font-size: 16px;}   
+                        main section{ font-size: 16px;}  
+                        h2{font-size: 1.4rem;} 
 }
 
-@media (max-width:400px) {
+@media (max-width:700px) {
     header{
         flex-direction: column;
         justify-items: center;
@@ -153,5 +150,12 @@ footer i{
         padding-right: 0.7vw;
         font-size: 0.95rem;
     }
+    main{
+        
+        height: 80%;
+    }
+    h2{font-size: 1.3rem;}
+
+    
 }
     
