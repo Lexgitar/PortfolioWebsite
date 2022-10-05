@@ -35,9 +35,9 @@ header{
     padding-left: 0.5vw;
 }
 
-a{
-    text-decoration: none;
-}
+a{ text-decoration: none;}
+.title a:visited{ text-decoration: none;
+                    color: black}
 
 header ul{ 
     display: flex;
@@ -53,23 +53,26 @@ header li{
 
 main{ 
     width: 90vw;
-    margin: 10vw auto 5vw auto;
-    height: auto;
+    height: auto;   
+    
     
 }
+
+
 article{
     width: 100%;
-    margin-bottom: 5vw;
+    
 }
 
 section{
     width: 100%;
-    max-height: 90%;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-items: center;
     align-content: space-around;
-    margin-top: 1vw;
+    margin-top: 0;
+    
     
   
 }
@@ -78,12 +81,13 @@ section{
 section div{
     margin: 1vw auto ;
     border-left: 1px solid black;
-    max-height: 5vh;
+    max-height:4vh;
     width:90%;
     vertical-align:middle;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
     
 }
 
@@ -105,14 +109,21 @@ section li i{
 
 
 footer{
+    position:absolute;
+        bottom: 0;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
     width: 95%;
     margin: auto ;
     display: flex;
-    position: relative;
     justify-content: space-between;
-    
     border-top: 5px solid black;
+    z-index: 3;
 }
+
+
 footer h3{
     margin-top: 1vw;
 }
@@ -120,19 +131,43 @@ footer i{
     margin: 0.5vw;
     font-size: 2rem;
 }
+footer a:visited{ text-decoration: none;
+    color: black}
 
-@media ( max-width:800px ) { html{ font-size: 0.9rem;}
-                        main section{ font-size: 16px;}  
-                        h2{font-size: 1.4rem;} 
+@media ( max-width:900px ) { html { font-size: 0.9rem;}
+                        main section { font-size: 16px;}  
+                        section div{ margin:  3vw auto;}
+                        h2 {font-size: 1.4rem;} 
+        
+    #about{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-items: center;
+    }        
+       
+    .figure{
+        margin: 12vw auto;
+    }
+
+    #footer{
+        position:absolute;
+        bottom: 0;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+    }
+    
+   
+                        
+                        
 }
 
-@media (max-width:700px) {
+@media (min-width:300px) and (max-width:700px) {
     header{
         flex-direction: column;
         justify-items: center;
-        
-    }
-
+        }
 
     .title{
         display: flex;
@@ -150,12 +185,82 @@ footer i{
         padding-right: 0.7vw;
         font-size: 0.95rem;
     }
-    main{
-        
-        height: 80%;
+    section div{ margin:  3vw auto;}
+    main { height: 75%; } 
+
+    .figure{
+        margin: 10vw auto auto auto ;
     }
+
+
     h2{font-size: 1.3rem;}
+    
+     #img{
+        width: 300px;
+        height: 200px;
+       object-fit: contain;
+        border-radius: 20px;
+    }
+    
+  #contact .socials{
+    flex-flow: column nowrap;
+  }
+
+  #msg{
+    margin-top: 10vw;
+    
+  }
+    
+   
 
     
+  
 }
+/*------About me--------*/
+
+.about {
+    display: flex;
+    flex-flow: row nowrap ;
+}
+
+.about article{
+    margin-right: 3vw;
+}
+
+
+  
+
+ .img{
+    width: 600px;
+    height: 400px;
+    object-fit: fill;
+    border-radius: 20px;
+}
+
+
+/*--------Contact-----------*/
+
+.contact .socials{
     
+    width : 80%;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.socials i{
+    font-size: 8rem;
+}
+
+.contact{
+    height: 90%;
+    display: flex;
+    flex-flow: column nowrap;
+    
+}
+
+.message{
+    margin-top: 5vw;
+}
