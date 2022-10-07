@@ -17,19 +17,29 @@
         <nav>
             <ul>
             <li><a href="LexAboutMe.html"><h3>About me</h3></a></li>
-            <li><a href=""><h3>Projects</h3></a></li>
+            <li><a href="LexProjects.html"><h3>Projects</h3></a></li>
             <li><a href=""><h3>Contact</h3></a></li>
             </ul>
         </nav>      
     </header>
     <main class="contact" id="contact">
-        <div class="socials">
+        <div class="socials" id="socials">
             <a href="https://github.com/Lexgitar"><i class="fa-brands fa-square-github"></i></a>
             <a href="https://www.linkedin.com/in/lex-berdea-11797967/?locale=en_US"><i class="fa-brands fa-linkedin"></i></a>
             <a href="https://www.facebook.com/lex.berdea"><i class="fa-brands fa-facebook"></i></a>
             
         </div>
-        <div class="message" id="msg"><p>Or send me a message below :</p></div>
+        <form id="form" action="LexContact.html" method="post">
+            <h4>Or send me a message: </h4><br>
+            <label for="name"></label>
+            <input type="text" name="name" id="name" required placeholder="Your name"> <br><br>
+            <label for="email"></label>
+            <input type="text" name="email" id="email" required placeholder="Your email"> <br><br>
+            <label for="message"></label>
+            <textarea id="message" name="message" required rows="8" cols="40" placeholder="Your message here"></textarea>
+            <br><br>
+            <input type="submit" value="Submit">
+        </form>
         
         
             

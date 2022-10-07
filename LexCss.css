@@ -143,7 +143,12 @@ footer a:visited{ text-decoration: none;
         display: flex;
         flex-flow: column nowrap;
         justify-items: center;
-    }        
+        
+    }    
+    
+    .about{
+        margin: 10vh auto;
+    }
        
     .figure{
         margin: 12vw auto;
@@ -194,6 +199,10 @@ footer a:visited{ text-decoration: none;
 
 
     h2{font-size: 1.3rem;}
+
+    #about{
+        margin: auto;
+    }
     
      #img{
         width: 300px;
@@ -201,26 +210,66 @@ footer a:visited{ text-decoration: none;
        object-fit: contain;
         border-radius: 20px;
     }
+
+    #contact{
+        display: flex;
+        flex-flow: column nowrap;
+        align-content: space-between;
+    }
     
   #contact .socials{
-    flex-flow: column nowrap;
-  }
+    flex-flow: column wrap;
 
-  #msg{
-    margin-top: 10vw;
-    
   }
+  #socials i{
+    font-size: 4rem;
+    margin: 1.5vh auto;
+}
     
-   
 
-    
+    #form {
+        margin:3vh auto auto auto;
+    }
+        /*----projects------*/
+        #projects{
+            
+            height: 70vh;
+            display: grid;
+            grid-template-rows: repeat(8, 1fr);
+            grid-template-columns: 1fr;
+            gap: 2vh;
+            overflow: auto;
+            padding: auto;}
   
+            #credit { grid-area: 1/1/2/2;}
+            #organism{grid-area: 2/1/3/2;}
+            #mixed{grid-area: 3/1/4/2;}
+            #vandelay{grid-area: 4/1/5/2;}
+            #club{grid-area: 5/1/6/2 ;}  
+            #arts{grid-area: 6/1/7/2;}
+            #tea{grid-area: 7/1/8/2 ;}
+            #fotomatic{grid-area: 8/1/9/2; }    
+
+           .projects a:visited{ text-decoration: none;
+                color: black}           
+            #projects img{
+        
+                width: 75vw;
+                height: 10vh;
+                object-fit: cover;
+            }
+            
+            
+
 }
 /*------About me--------*/
 
 .about {
-    display: flex;
+    
+    display: inline-flex;
     flex-flow: row nowrap ;
+    align-items: center;
+    margin: auto;
 }
 
 .about article{
@@ -243,8 +292,8 @@ footer a:visited{ text-decoration: none;
 .contact .socials{
     
     width : 80%;
-    margin: auto;
-    height: 100%;
+    margin: 2vh auto;
+    height: 90%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -255,12 +304,68 @@ footer a:visited{ text-decoration: none;
 }
 
 .contact{
-    height: 90%;
-    display: flex;
-    flex-flow: column nowrap;
+    height: auto;
+   
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+   
+    
     
 }
 
-.message{
-    margin-top: 5vw;
-}
+    form{
+    
+    margin: 10vh auto auto auto;
+    width: fit-content;
+    
+    }
+    form h4, input, textarea{
+   
+    width: fit-content;
+    margin: auto ;
+    }
+
+   /*-----Projects------*/
+   
+   .projects{
+    
+    height: 70vh;
+    display: grid;
+    grid-template: repeat(3, 1fr)/ repeat(6, 1fr);
+    gap: 1vh;
+    overflow: auto;
+    padding: auto;
+    
+    
+   }
+     .projects div{
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: rgb(233, 227, 227);
+        font-weight: bold;
+        border-radius: 5px;
+        
+    }
+
+    .credit { grid-area: 1/1/2/3;}
+    .organism{grid-area: 1/3/2/5;}
+    .mixed{grid-area: 1/5/2/7;}
+    .vandelay{grid-area: 2/1/3/3;}
+    .club{grid-area: 2/3/3/5 ;}  
+    .arts{grid-area: 2/5/3/7;}
+    .tea{grid-area: 3/2/4/4 ;}
+    .fotomatic{grid-area: 3/4/4/6; }    
+    
+    
+
+    .projects img{
+        
+        width: 26vw;
+        height: 20vh;
+        object-fit: cover;
+       
+    }
