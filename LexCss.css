@@ -37,7 +37,7 @@ header{
 
 nav h3:hover {
        
-    box-shadow: 1px 2px 3px black;
+    box-shadow: -1px 1px 1px black;
     margin-top: 0.1px;
   }
 
@@ -120,24 +120,23 @@ section li i{
 }
 
 section a:hover {
-     border-radius: 3px;   
-    box-shadow: 1px 2px 3px black;
-    margin-top: -2px;
+     border-radius: 1px;   
+    box-shadow: 1px 1px 1px black;
+    margin-left: 1px;
   }
 
 footer{
-    position:absolute;
+    position: absolute;
         bottom: 0;
-        margin-left: auto;
-        margin-right: auto;
+        margin:auto;
         left: 0;
         right: 0;
-    width: 95%;
-    margin: auto ;
+         width: 95%;
+    
     display: flex;
     justify-content: space-between;
     border-top: 5px solid black;
-    z-index: 3;
+    
 }
 
 
@@ -295,7 +294,11 @@ footer a:visited{ text-decoration: none;
 }
 
 
-  
+.about a:hover {
+    border-radius: 1px;   
+   box-shadow: 1px 2px 3px black;
+   margin-top: -2px;
+ }
 
  .img{
     width: 600px;
@@ -384,7 +387,7 @@ footer a:visited{ text-decoration: none;
     #projects div:hover {
         
         box-shadow: 1px 2px 3px black;
-        margin-top: -2px;
+        margin-left: -0.01px;
       }
 
     .credit { grid-area: 1/1/2/3;}
@@ -406,4 +409,62 @@ footer a:visited{ text-decoration: none;
        
     }
 
+    /*-----Dynamic-Javscript pages ------*/
+
+    .tab{
+        
+        width: 90vw;
+        height: 70vh;
+        display: grid;
+        position: relative;
+        margin: auto ;
+        grid-template-areas: "left right";
+        grid-template-columns: 1fr 3fr;
+        
+    }
     
+    .tab .lefttab, aside {
+        
+    }
+    .tab h3{
+        margin: auto;
+        text-align: center;
+       
+    }
+
+    .lefttab {
+        grid-area: left;
+        display: grid;
+     
+    }
+    
+ .righttab{
+    grid-area: right;
+    padding: 1vw;
+    overflow: auto;
+}
+
+.jscontainer{
+    display: grid;
+    width:100%;
+    height:100%;
+    grid-template-areas: "theName"
+                        "core"
+                        "hubs";          
+    grid-template-rows: 1fr 5fr 1fr ;              
+}
+.thename{grid-area: theName ; 
+        border: ;
+        margin: auto;}
+
+.jscontent{grid-area: core;
+     border: 1px solid blue;}
+
+.files{grid-area: hubs; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    }
+.files i{font-size: 3rem;}
+.files .fab{margin: auto;}
+
