@@ -48,7 +48,7 @@ nav h3:hover {
   }
 
 a{ text-decoration: none;}
-.title a:visited{ text-decoration: none;
+a:visited{ text-decoration: none;
                     color: black}
 
 header ul{ 
@@ -467,4 +467,8 @@ footer a:visited{ text-decoration: none;
     }
 .files i{font-size: 3rem;}
 .files .fab{margin: auto;}
-
+.lefttab a:hover, .files a:hover {
+    border-radius: 1px;   
+   box-shadow: 1px 1px 1px black;
+   margin-top: -1px;
+ }
