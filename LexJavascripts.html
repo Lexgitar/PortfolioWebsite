@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/2035371d68.js" crossorigin="anonymous"></script>
     
+    
     <link rel="stylesheet" href="LexCss.css" type="text/css">
     <title>Lex Berdea Portfolio Website</title>
 </head>
@@ -31,7 +32,7 @@
         </div>
 
         <aside class="righttab" id="righttab">
-            <script type="text/javascript" src="creditCardGenerator.js"></script>
+           
             <div class="jscontainer" id="creditCard">
                 <h2 class="thename">Credit Card Checker</h2>
                 <div class="jscontent">
@@ -44,28 +45,28 @@
                             <th scope="col">Brands</th>
                         </tr>
                         <tr>
-                            <td class="tester">Card-1</td>
-                            <td><input type="text" class="cardNo" value="456"></td>
+                            <td id="firstCard" >Card-1</td>
+                            <td><input type="text" id="cardNoa" value=""></td>
                             <td><input type="text" value=""></td>
                             <td><input type="text"></td>
                         </tr>
                         <tr><td>Card-2</td>
-                            <td><input type="text"></td>
+                            <td><input type="text" id="cardNob" value=""></td>
                             <td><input type="text"></td>
                             <td><input type="text"></td></tr>
                         <tr><td>Card-3</td>
-                            <td><input type="text"></td>
+                            <td><input type="text" id="cardNoc" value=""></td>
                             <td><input type="text"></td>
                             <td><input type="text"></td></tr>
                         <tr><td>Card-4</td>
-                            <td><input type="text"></td>
+                            <td><input type="text" id="cardNod" value=""></td>
                             <td><input type="text"></td>
                             <td><input type="text"></td></tr>
                         <tr>
                             <td></td>
-                            <td id="generate">Generate</td>
-                            <td><button id="validate">Validate</button></td>
-                            <td><button id="reveal">Reveal</button></td>
+                            <td><button id="genBut">Generate</button></td>
+                            <td><button id="validateBut">Validate</button></td>
+                            <td><button id="revealBut">Reveal</button></td>
 
                         </tr>
                     </table>
@@ -98,7 +99,7 @@
         </aside>
         
       
-
+        <script src="creditCardGenerator.js" ></script> 
     </main>
     
     <footer id="footer">
