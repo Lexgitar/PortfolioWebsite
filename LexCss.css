@@ -458,7 +458,7 @@ footer a:visited{ text-decoration: none;
         margin: auto;}
 
 .jscontent{grid-area: core;
-     border: 1px solid blue;
+     
    display: grid;
    
    
@@ -491,13 +491,14 @@ footer a:visited{ text-decoration: none;
  }
  
 
- .table p{
+  .pext{
     width: 80%;
     height:auto;
     margin: auto;
     font-size: larger;
+    
  }
-  .anchor{
+   .anchor{
     text-decoration: underline;
  }
  @media (min-width:300px) and (max-width:700px){
@@ -512,8 +513,10 @@ footer a:visited{ text-decoration: none;
     }
      #pext{
         font-size: normal;
-        margin: auto ;
-        font-weight: bold;
+        width: auto;
+        height: auto;
+        margin: auto 1.2vw 1vw 1.2vw;
+        font-size: 1rem;
     }
     h4{
         display: none;
