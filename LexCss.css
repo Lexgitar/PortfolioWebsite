@@ -458,7 +458,13 @@ footer a:visited{ text-decoration: none;
         margin: auto;}
 
 .jscontent{grid-area: core;
-     border: 1px solid blue;}
+     border: 1px solid blue;
+   display: grid;
+   
+   
+   
+    
+}
 
 .files{grid-area: hubs; 
     display: flex;
@@ -471,4 +477,46 @@ footer a:visited{ text-decoration: none;
     border-radius: 1px;   
    box-shadow: 1px 1px 1px black;
    margin-top: -1px;
+ }
+
+
+
+ .table{
+    margin: auto;
+    display: flex;
+ }
+ 
+ .table div{
+    margin:auto 1vw;
+ }
+ 
+
+ .table p{
+    width: 80%;
+    height:auto;
+    margin: auto;
+    font-size: larger;
+ }
+  .anchor{
+    text-decoration: underline;
+ }
+ @media (min-width:300px) and (max-width:700px){
+    .table{
+        display: flex;
+        flex-flow: column nowrap;
+        
+
+    }
+    .table div{
+        margin-top: 0.6vh;
+    }
+     #pext{
+        font-size: normal;
+        margin: auto ;
+        font-weight: bold;
+    }
+    h4{
+        display: none;
+        
+    }
  }

@@ -63,8 +63,7 @@ return total( sumOdd, sumEven );
   //console.log(total(sumOdd,sumEven));
   };
  // test 
- let valik=[9,3,3,6,7,3,4,6,4,7,2,5];
-console.log('this is ' + validateCred(valik));
+ 
 
 let invList = [];
   let vaList = [];
