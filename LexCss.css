@@ -528,14 +528,45 @@ footer a:visited{ text-decoration: none;
     background-color: #eeeeee;
     display: flex;
     justify-content: space-around;
+    
+  }
+
+  fieldset div{
+    margin: auto;
+  }
+
+  .mixInputs{
+    
+  }
+
+  .mixInputs input{
+    margin: 0.5vh;
   }
   .quoText{
     border: 3px dotted maroon;
-    width: 80%;
-    height: 11%;
+    width: 90%;
+    height: 6vh;
     text-align: center;
+    margin: auto;
   }
+
   
-  .mixGame p{
+  .mixdP{
     text-align: center;
-  }
+    font-size: 1.2rem;
+    background-color: beige;
+    margin: auto;
+}
+    
+  .mixGame{
+   display: grid;
+   grid-template-rows: 0.3fr 0.3fr 1fr 0.7fr 0.7fr ;
+   gap: 1vh;
+ }
+ 
+ #quote1{
+    
+    font-weight: bold;
+    background-color:beige;
+    
+    margin:  auto;}
