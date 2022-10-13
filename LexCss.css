@@ -523,3 +523,19 @@ footer a:visited{ text-decoration: none;
         
     }
  }
+
+ fieldset {
+    background-color: #eeeeee;
+    display: flex;
+    justify-content: space-around;
+  }
+  .quoText{
+    border: 3px dotted maroon;
+    width: 80%;
+    height: 11%;
+    text-align: center;
+  }
+  
+  .mixGame p{
+    text-align: center;
+  }
