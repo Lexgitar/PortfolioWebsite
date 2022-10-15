@@ -67,4 +67,36 @@ return mixmsg[genNum2()];
 };
 
 
-console.log(mixedmessages());
+//console.log(mixedmessages());
+// dom stuff //
+
+let customBut = document.getElementById('Custom');
+let defaultBut = document.getElementById('Default');
+let genMesBut = document.getElementById('genMes');
+const butTextChange = ()=>{
+  genMesBut.innerHTML = "De-generate Message";
+  defaultBut.disabled = true;
+};
+//
+
+
+const defButReset =()=>{
+   customBut.disabled = true;
+   document.getElementById("aname").disabled = true;
+   document.getElementById("anoname").disabled = true;
+   document.getElementById("sup").disabled = true;
+   document.getElementById("ansup").disabled = true;
+
+};
+//
+customBut.onclick = butTextChange;
+defaultBut.onclick = defButReset;
+
+let printSpot = getElementById('printOut');
+
+const mesMixer = ()=>{
+  printSpot.innerHTML = mixedmessages();
+
+};
+
+genMesBut.onclick = mesMixer;

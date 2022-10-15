@@ -101,7 +101,7 @@
                         <p class="mixdP">Select mode:</p>
                         <fieldset>
                             <div>
-                              <input type="radio" id="Default" name="radio" value="Default">
+                              <input type="radio" id="Default" name="radio" value="Default" required>
                               <label for="Default">Default</label>
                             </div>
                             <div>
@@ -110,15 +110,15 @@
                             </div>
                         </fieldset>
                         
-                        <div class="mixInputs">
-                            <input type="text" id="" placeholder="enter a name ">
-                            <input type="text" id="" placeholder="another name ">
-                            <input type="text" id="" placeholder="super-hero name">
-                            <input type="text" id="" placeholder="another super-hero"><br>
+                        <div class="mixInputs" id="mixInputs">
+                            <input type="text" class="write" id="aname" placeholder="enter a name " value="">
+                            <input type="text" class="write" id="anoname" placeholder="another name " value="">
+                            <input type="text" class="write" id="sup" placeholder="super-hero name" value="">
+                            <input type="text" class="write" id="ansup" placeholder="another super-hero" value=""><br>
                             <button id="genMes">Generate Message</button>
                         </div>
                         <div class="quoText" >
-                            <h3 >Text will print here</h3>
+                            <h3 id="printOut">Text will print here</h3>
                         </div>
                         <p id="quote1">
                             Here the code loops through conditions and arrays of strings at random to 
@@ -138,7 +138,7 @@
 
         </aside>
         
-      
+        <script src="mixedMessagesGenerator.js"></script>
         <script src="creditCardGenerator.js" ></script> 
     </main>
     
