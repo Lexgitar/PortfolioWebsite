@@ -38,7 +38,7 @@ header{
 nav h3:hover {
        
     box-shadow: -1px 1px 1px black;
-    margin-top: 0.1px;
+    margin-left: 0.1px;
   }
 
   footer a:hover {
@@ -297,7 +297,7 @@ footer a:visited{ text-decoration: none;
 .about a:hover {
     border-radius: 1px;   
    box-shadow: 1px 2px 3px black;
-   margin-top: -2px;
+   
  }
 
  .img{
@@ -542,14 +542,18 @@ footer a:visited{ text-decoration: none;
   .mixInputs input{
     margin: 0.5vh;
   }
-  .quoText{
-    border: 3px dotted maroon;
+  .quoText {
     width: 90%;
     height: 6vh;
     text-align: center;
     margin: auto;
   }
 
+  .quoText h3{
+    border: 3px dotted grey;
+    width: auto;
+    height: auto;
+  }
   
   .mixdP{
     text-align: center;
@@ -565,8 +569,8 @@ footer a:visited{ text-decoration: none;
  }
  
  #quote1{
-    
     font-weight: bold;
     background-color:beige;
-    
     margin:  auto;}
+
+    

@@ -98,7 +98,7 @@
                 <h2 class="thename">Mixed Messages</h2>
                 <div class="jscontent mixMes" id="mixedmessages">
                     <div class="mixGame">
-                        <p class="mixdP">Select mode:</p>
+                        <p class="mixdP">Select mode</p>
                         <fieldset>
                             <div>
                               <input type="radio" id="Default" name="radio" value="Default" required>
@@ -111,10 +111,11 @@
                         </fieldset>
                         
                         <div class="mixInputs" id="mixInputs">
-                            <input type="text" class="write" id="aname" placeholder="enter a name " value="">
-                            <input type="text" class="write" id="anoname" placeholder="another name " value="">
-                            <input type="text" class="write" id="sup" placeholder="super-hero name" value="">
-                            <input type="text" class="write" id="ansup" placeholder="another super-hero" value=""><br>
+                            <input type="text" class="write" id="aname" pattern="[A-Za-z]" title="ok , I see"  placeholder="enter a name " required value="">
+                            <input type="text" class="write" id="anoname" pattern="[A-Za-z]" title="whatever, carry on" placeholder="another name " required value="">
+                            <input type="text" class="write" id="sup" pattern="[A-Za-z]" title="Homelander please please please" placeholder="super-hero name" required value="">
+                            <input type="text" class="write" id="ansup" pattern="[A-Za-z]" title="come on already type something" placeholder="another super-hero" required value="">
+                            <button id="subBut">Submit</button><br>
                             <button id="genMes">Generate Message</button>
                         </div>
                         <div class="quoText" >

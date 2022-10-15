@@ -73,30 +73,49 @@ return mixmsg[genNum2()];
 let customBut = document.getElementById('Custom');
 let defaultBut = document.getElementById('Default');
 let genMesBut = document.getElementById('genMes');
-const butTextChange = ()=>{
+
+let submitbut = document.getElementById('subBut');
+
+let ferstInput = document.getElementById("aname");
+let secundInput = document.getElementById("anoname");
+let therdInput = document.getElementById("sup");
+let ferthInput = document.getElementById("ansup");
+//disabled on page load 
+genMesBut.disabled = true;
+ ferstInput.disabled = true;
+secundInput.disabled = true;
+therdInput.disabled = true;
+ferthInput.disabled = true;
+submitbut.disabled = true;
+
+const customButEnable = ()=>{
   genMesBut.innerHTML = "De-generate Message";
-  defaultBut.disabled = true;
+  defaultBut.disabled = true;  
+  document.getElementById("aname").disabled = false;
+  document.getElementById("anoname").disabled = false;
+  document.getElementById("sup").disabled = false;
+  document.getElementById("ansup").disabled = false;
+  submitbut.disabled = false;
 };
 //
-
-
-const defButReset =()=>{
-   customBut.disabled = true;
-   document.getElementById("aname").disabled = true;
-   document.getElementById("anoname").disabled = true;
-   document.getElementById("sup").disabled = true;
-   document.getElementById("ansup").disabled = true;
-
+const defButDisables =()=>{
+   customBut.disabled = true; 
+   genMesBut.disabled = false;
 };
 //
-customBut.onclick = butTextChange;
-defaultBut.onclick = defButReset;
+const genEnable = ()=>{
+  genMesBut.disabled = false;
+  submitbut.disabled = true;
+};
+customBut.onclick = customButEnable;
+defaultBut.onclick = defButDisables ;
+submitbut.onclick = genEnable;
 
-let printSpot = getElementById('printOut');
+let printSpot = document.getElementById("printOut");
 
 const mesMixer = ()=>{
   printSpot.innerHTML = mixedmessages();
-
+  genMesBut.disabled = true;
 };
 
 genMesBut.onclick = mesMixer;
