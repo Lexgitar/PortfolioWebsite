@@ -594,6 +594,7 @@ footer a:visited{ text-decoration: none;
 
 .inits input{
     text-align: center;
+    width:150px;
 }
 
 .genStr {
@@ -606,7 +607,7 @@ footer a:visited{ text-decoration: none;
     
      width:180px;
      height: 20px;
-    color: grey;
+    color: gray;
     text-align: center;
 }
 
