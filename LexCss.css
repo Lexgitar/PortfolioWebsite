@@ -492,10 +492,14 @@ footer a:visited{ text-decoration: none;
  
 
   .pext{
+    padding: 1vh;
     width: 80%;
     height:auto;
     margin: auto;
     font-size: larger;
+    background-color:beige;
+    font-weight: bold;
+    text-align: center;
     
  }
    .anchor{
@@ -618,4 +622,6 @@ footer a:visited{ text-decoration: none;
 
 .dnaText{
     margin: auto;
+    background-color:beige;
+    font-weight: bold;
 }
