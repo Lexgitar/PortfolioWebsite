@@ -573,4 +573,43 @@ footer a:visited{ text-decoration: none;
     background-color:beige;
     margin:  auto;}
 
+    /*--------------Mysterious Organism---------------------*/
+
+.dnaCore{
     
+    display: grid;
+    grid-template-rows: 1fr 0.4fr 1.2fr 0.4fr;
+    grid-template-columns: 1fr;
+    gap: 1vh;
+    
+}
+
+.dnaCore section{
+    
+    width:98%;
+    margin-left: auto;
+    margin-right: auto;
+      
+}
+
+.inits input{
+    text-align: center;
+}
+
+.genStr {
+   display: flex;
+   
+   align-items: center;
+}
+
+.genStr p{
+    
+     width:180px;
+     height: 20px;
+    color: grey;
+    text-align: center;
+}
+
+.dnaText{
+    margin: auto;
+}

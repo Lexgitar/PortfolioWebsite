@@ -83,7 +83,34 @@
             <div class="jscontainer" id="mysteriousOrganism">
                 <h2 class="thename">Mysterious Organism</h2>
                 <div class="jscontent mystOrg" id="mystOrg">
-                    <div>
+                    <div class="dnaCore" id="dnaCore">
+                        <section class="inits" id="inits">
+                            <input id="lettOne" type="text" placeholder="Your initial" title="must be a cool one" value="">
+                            <input id="lettTwo" type="text" placeholder="Your mother's initial" title="again, must be...nvm" value="">
+                            <input id="lettThree" type="text" placeholder="Your father's initial" title="all must be different btw" value="">
+                            <input id="lettFour" type="text" placeholder="...and another one" title="just any, really" value="">
+                            <input type="button" id="passInButt" value="&nbsp Pass Input &nbsp">
+                        </section>
+                        <section class="prodDNA" id="prodDNA">
+                            <input type="button" id="prodButt" value="&nbsp Produce DNA &nbsp">
+                            <input type="text" name="" id="dnaOutput">
+
+                        </section>
+                        <section class="genStr" id="genStr">
+                            <label for="strAmo">Generate up to five strong strands</label>
+                            <input type="range" name="strAmo" id="strAmo" value="" min="1" max="5" oninput="this.nextElementSibling.value = this.value" >
+                            <output></output>
+                            <p class="firstP" id="firstP">Strong DNA strand</p>
+                            <p id="secondP">Strong DNA strand</p>
+                            <p id="thirdP">Strong DNA strand</p>
+                            <p id="fourthP">Strong DNA strand</p>
+                            <p id="fifthP">Strong DNA strand</p>
+                            
+                        </section>
+                        <section id="parag">
+                            <p class="dnaText"><a href="" target="_blank" rel="noopener noreferrer" >Original code
+                                 here</a> or current version - JS icon.</p>
+                        </section>
 
                     </div>
                 </div>
@@ -122,7 +149,7 @@
                             <h3 id="printOut">Text will print here</h3>
                         </div>
                         <p id="quote1">
-                            Based on the original code wrote for the
+                            Based on the code wrote for the
                              Codecademy project, click below for current version.
                         </p>
 
@@ -137,7 +164,7 @@
             </div>
 
         </aside>
-        
+        <script src="dNaScript.js"></script>
         <script src="mixedMessagesGenerator.js"></script>
         <script src="creditCardGenerator.js" ></script> 
     </main>
