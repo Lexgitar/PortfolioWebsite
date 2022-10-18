@@ -610,6 +610,11 @@ footer a:visited{ text-decoration: none;
     text-align: center;
 }
 
+.dnaOutput{
+    width: 190px;
+    text-align: center;
+}
+
 .dnaText{
     margin: auto;
 }
