@@ -113,7 +113,7 @@ return total( sumOdd, sumEven );
 
   valButton.onclick = validatorB;
 
-  // Issuer reveal
+  // ---Issuer reveal ---
 
   let maker = '';
 const issuer = (cartela)=>{

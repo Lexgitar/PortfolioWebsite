@@ -15,7 +15,7 @@ let thirdP = document.getElementById("thirdP");
 let fourthP = document.getElementById("fourthP");
 let fifthP = document.getElementById("fifthP");
 
-//--- on page-load :
+//--- on page-load ---:
 const onPageLoad=()=>{
 //letterTwo.disabled = true;
 //letterThree.disabled = true;

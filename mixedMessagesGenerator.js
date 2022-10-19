@@ -17,7 +17,7 @@ furthInput.disabled = true;
 submitbut.disabled = true;
 genMesBut.disabled = true;
 
-//custom select 
+//---custom select --
 const customButEnable = ()=>{
   genMesBut.innerHTML = "De-generate Message";
   defaultBut.disabled = true;  

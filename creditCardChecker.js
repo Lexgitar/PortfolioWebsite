@@ -32,8 +32,7 @@ const validateCred = (arr) => {
       evenList.push(arr[i])
       }
 }
-//  console.log(oddList);
-//  console.log(evenList);
+
 evenList = evenList.map(num => {
   if (num * 2 > 9){
     return num * 2 - 9;
@@ -41,57 +40,43 @@ evenList = evenList.map(num => {
     return num * 2;
   }
 });
-//new evenList 
-// console.log(evenList);
 
 let sumOdd = oddList.reduce((x, y)=>{return x+y});
 let sumEven = evenList.reduce((z, q)=>{return z+q});
 
-// console.log(sumOdd);
-// console.log(sumEven);
-
 const total = ( sumOdd, sumEven )=>{
   let result = sumOdd + sumEven;
-  //console.log(result);
+ 
   if (result% 10 == 0){return true;}
   else {return false;}
    };
   
-
-
 return total( sumOdd, sumEven );
-  //console.log(total(sumOdd,sumEven));
-  };
- // test 
- 
+  
+};
 
 let invList = [];
   let vaList = [];
 function findInvalidCards(cards){
-  //let invList = [];
-  //let vaList = [];
+ 
   for (let i=0; i < cards.length; i++){
       if (validateCred(cards[i]) == true ){
          vaList.push(cards[i]);
       }else if (validateCred(cards[i]) == false ){
-        invList.push(cards[i]);}
-      
+        invList.push(cards[i]);}      
   }
  //return invList;
-  console.log(invList);
-  //console.log(vaList);
+  console.log(invList); 
 };
-//console.log(batch);
-findInvalidCards(batch);
 
+findInvalidCards(batch);
 
 let brandList = [];
 const idInvalidCardCompanies = (list)=>{
     //let brandList = [];
     for (let i=0; i<list.length; i++){
       if (list[i][0] == 3 ){
-         brandList.splice(0,1,'Amex');
-       
+         brandList.splice(0,1,'Amex'); 
       }else if (list[i][0] == 4){
         brandList.splice(1,1,'Visa');
       }else if(list[i][0] == 5){
