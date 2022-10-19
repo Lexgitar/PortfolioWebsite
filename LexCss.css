@@ -8,7 +8,7 @@ html{
     font-size: 16px;
     display: inline-flex;
     justify-content: center;
-    
+    background-color: #e0e0e0;
     
 }
 /*------*/
@@ -21,12 +21,18 @@ header{
     max-width: 76%;
     justify-content: space-between;
     align-items: flex-end;
+    
+
+    
 }
 .title{
     margin: 1vw 0.5vw 0 0.5vw;
     border-bottom: 1px solid grey;
     
 }
+
+
+
 .title h1{
     border-left: 1px solid grey;
     padding-left: 0.5vw;
@@ -37,9 +43,10 @@ header{
 
 nav h3:hover {
        
-    box-shadow: -1px 1px 1px black;
+    border-radius: 1px; 
+    box-shadow: 1px 1px 1px black;
     margin-left: 0.1px;
-  }
+}
 
   footer a:hover {
       border-radius: 5px; 
@@ -48,6 +55,7 @@ nav h3:hover {
   }
 
 a{ text-decoration: none;}
+
 a:visited{ text-decoration: none;
                     color: black}
 
@@ -65,14 +73,25 @@ header li{
 
 main{ 
     width: 90vw;
-    height: auto;   
-    
+    max-height: max-content;
     
 }
 
+.legendText{
+    border: none;
+}
+
+.legendText p{
+    border-bottom: 1px solid black;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+.pRoj{margin-left: 3vw;}
+.lAng{margin-right: 3vw;}
 
 article{
     width: 100%;
+    margin: 2vw;
     
 }
 
@@ -91,9 +110,9 @@ section{
 
 
 section div{
-    margin: 1vw auto ;
+    margin: 1rem auto ;
     border-left: 1px solid black;
-    max-height:4vh;
+    max-height:30px;
     width:90%;
     vertical-align:middle;
     display: flex;
@@ -120,10 +139,11 @@ section li i{
 }
 
 section a:hover {
-     border-radius: 1px;   
+     border-radius: 2px;   
     box-shadow: 1px 1px 1px black;
     margin-left: 1px;
-  }
+    background-color: lightgray;
+}
 
 footer{
     position: absolute;
@@ -136,6 +156,7 @@ footer{
     display: flex;
     justify-content: space-between;
     border-top: 5px solid black;
+   
     
 }
 
@@ -207,7 +228,11 @@ footer a:visited{ text-decoration: none;
         font-size: 0.95rem;
     }
     section div{ margin:  3vw auto;}
-    main { height: 75%; } 
+    main { height: 80%; } 
+
+    #pRoj{margin: auto 0;}
+    #lAng{margin: auto 0;}
+    
 
     .figure{
         margin: 10vw auto auto auto ;
@@ -287,10 +312,11 @@ footer a:visited{ text-decoration: none;
     flex-flow: row nowrap ;
     align-items: center;
     margin: auto;
+    height: auto;
 }
 
 .about article{
-    margin-right: 3vw;
+    
 }
 
 
@@ -307,11 +333,6 @@ footer a:visited{ text-decoration: none;
    
 
 }
-
-
-
-
-
 /*--------Contact-----------*/
 
 .contact .socials{
@@ -423,9 +444,7 @@ footer a:visited{ text-decoration: none;
         
     }
     
-    .tab .lefttab, aside {
-        
-    }
+    
     .tab h3{
         margin: auto;
         text-align: center;
@@ -435,9 +454,11 @@ footer a:visited{ text-decoration: none;
     .lefttab {
         grid-area: left;
         display: grid;
-     
-    }
+        
+ }
     
+
+
  .righttab{
     grid-area: right;
     padding: 1vw;
@@ -451,35 +472,37 @@ footer a:visited{ text-decoration: none;
     grid-template-areas: "theName"
                         "core"
                         "hubs";          
-    grid-template-rows: 1fr 5fr 1fr ;              
+    grid-template-rows: 1fr 5fr 1fr ;    
+    
+    
+    border-radius: 5px;
+background: #e0e0e0;
+box-shadow: inset 8px 8px 16px #bebebe,
+            inset -8px -8px 16px #ffffff;
 }
 .thename{grid-area: theName ; 
         border: ;
         margin: auto;}
 
-.jscontent{grid-area: core;
+.jscontent{
+    grid-area: core; 
+    display: grid;
      
-   display: grid;
-   
-   
-   
-    
 }
 
-.files{grid-area: hubs; 
+.files{
+    grid-area: hubs; 
     display: flex;
     justify-content: space-around;
     align-items: center;
-    }
+}
 .files i{font-size: 3rem;}
 .files .fab{margin: auto;}
 .lefttab a:hover, .files a:hover {
-    border-radius: 1px;   
-   box-shadow: 1px 1px 1px black;
-   margin-top: -1px;
+    border-radius: 2px;   
+    box-shadow: 1px 2px 2px black;
+    margin-top: -1px;
  }
-
-
 
  .table{
     margin: auto;
@@ -488,9 +511,11 @@ footer a:visited{ text-decoration: none;
  
  .table div{
     margin:auto 1vw;
+    border-radius: 5px;
+background: linear-gradient(145deg, #f0f0f0, #cacaca);
+box-shadow:  7px 7px 14px #868686,
+             -7px -7px 14px #ffffff;
  }
- 
-
   .pext{
     padding: 1vh;
     width: 80%;
@@ -500,6 +525,7 @@ footer a:visited{ text-decoration: none;
     background-color:beige;
     font-weight: bold;
     text-align: center;
+    border-radius: 3px;
     
  }
    .anchor{
@@ -532,6 +558,8 @@ footer a:visited{ text-decoration: none;
     background-color: #eeeeee;
     display: flex;
     justify-content: space-around;
+    width:80%;
+    margin: auto;
     
   }
 
@@ -540,7 +568,7 @@ footer a:visited{ text-decoration: none;
   }
 
   .mixInputs{
-    
+    margin: auto;
   }
 
   .mixInputs input{
@@ -554,7 +582,7 @@ footer a:visited{ text-decoration: none;
   }
 
   .quoText h3{
-    border: 3px dotted grey;
+    border: 3px dotted black;
     width: auto;
     height: auto;
   }
@@ -593,7 +621,8 @@ footer a:visited{ text-decoration: none;
     width:98%;
     margin-left: auto;
     margin-right: auto;
-      
+
+    
 }
 
 .inits input{

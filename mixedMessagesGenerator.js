@@ -89,29 +89,18 @@ const mixedmessages = (arrg)=>{
 return arrg;
 };
 
-
-
-
-
-
 const defButDisables =()=>{
   customBut.disabled = true; 
   genMesBut.disabled = false;
   genMesBut.onclick = mesMixerFunc1;
 };
 //
-
 const mesMixerFunc1 = ()=>{
   printSpot.innerHTML = mixedmessages(msg2);
   genMesBut.disabled = true;
 };
 
-
-
-
 // new arrays formage
-
- 
 const submitting =()=>{
   genMesBut.disabled = false;
   submitbut.disabled = true;
@@ -131,19 +120,11 @@ customBut.onclick = customButEnable;
 defaultBut.onclick = defButDisables ;
 submitbut.onclick = submitting;
 
-
 let printSpot = document.getElementById("printOut");
-
-
-
 
 const subButEnable=()=>{submitbut.disabled = false;};
 furthInput.addEventListener('change', subButEnable);
 
-
-
-
-// ------------------ main fct
 
 
 
