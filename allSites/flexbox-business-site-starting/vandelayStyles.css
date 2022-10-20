@@ -15,8 +15,7 @@ body{
 
 .allcontent{
     display: flex;
-    flex-flow: column wrap;
-    
+    flex-flow: column wrap; 
 }
 
 header{
@@ -26,10 +25,8 @@ header{
     border-bottom: solid 1px #c6c1c1;
     background-color: white;
     margin: auto;
-    
     left: 0;
     right: 0;
-    
 }
 
 .header{
@@ -89,7 +86,6 @@ a{
 a:visited{
     text-decoration: none;
 }
-
 /*-------MAIN-------*/
 .middle{
     width: 90%;
@@ -103,8 +99,6 @@ a:visited{
     justify-content: space-evenly;
     align-items: flex-end;
    }
-
-
 
 .cardscontainer{
     
