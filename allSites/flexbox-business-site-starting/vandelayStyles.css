@@ -1,0 +1,261 @@
+html{
+    font-size: 16px ;
+    max-width: 90rem;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+body{
+    width: 95%;
+    margin: auto;
+    text-align: center;
+}
+
+.allcontent{
+    display: flex;
+    flex-flow: column wrap;
+}
+
+header{
+    position: fixed;
+    z-index: 100;
+    width: 95%;
+    border-bottom: solid 1px #c6c1c1;
+    background-color: white;
+    top: 0;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.home{
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+
+.logo{
+    width: 7rem;
+    height: 6rem;
+    background-image: url(../flexbox-business-site-starting/item73023se.jpg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.home h1{
+    margin-left: 0.5rem;
+    padding-right: 0.5rem;
+    border-right: 1px solid red;
+    border-bottom: 1px solid red;
+    border-bottom-right-radius: 0.5rem;
+}
+
+.menu{
+    display: inline-flex;
+    align-items: center;
+    margin-right: 3rem;
+}
+
+ul{
+    width: 20rem;
+    list-style-type: none;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+li{
+    padding: 0.3rem;
+    border: 1px solid blue;
+    border-radius: 0.5rem;
+    background-color: rgb(201, 194, 194);
+}
+
+a{
+    color: red;
+    text-decoration: none;
+}
+
+a:visited{
+    text-decoration: none;
+}
+
+/*-------MAIN-------*/
+
+.explore{
+    background-color: black;
+    color: white;
+    width: 70%;
+    height: 9%;
+    position: absolute;
+    z-index: 10;
+    margin: 30rem auto;
+    border-radius: 3rem;
+    font-size: 2.5rem;
+}
+
+.explore h2{
+    margin: 0;
+}
+
+.middle{
+    width: 90%;
+    height: 700px;
+    background-image: url(./main.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 1rem auto 1rem auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+.card{
+    width: 16rem;
+    height: 18rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 5rem;
+}
+
+#products{
+    background-image: url(./products-background.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#services{
+    background-image: url(./services.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#portfolio{
+    background-image: url(./portfolio.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.middle h3{
+    background-color: black;
+    color: white;
+    width: 90%;
+    height: 10%;
+    border: 1px solid red;
+    border-radius: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+/*-------TEAM-------*/
+
+.team{
+    width: 90%;
+    height: 700px;
+    background-image: url(./team-background.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 5rem auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 30%;
+}
+
+.h2{
+    background-color: rgb(199, 194, 194);
+    border-left: 1px solid rgb(141, 139, 139);
+    border-right: 1px solid rgb(141, 139, 139);
+}
+
+.h2 h2{
+    font-size: 3rem;
+    margin: 0 auto;
+}
+
+.fotos{
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+}
+
+.fotos div{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.fotos h3{
+    width: 99%;
+    background-color: white;
+    border: 1px solid red;
+    border-radius: 0.3rem;
+}
+
+.geo{
+    width: 25%;
+    height: 15rem;
+    background-image: url(./george.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.jer{
+    width: 25%;
+    height: 15rem;
+    background-image: url(./jerry.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cos{
+    width: 25%;
+    height: 15rem;
+    background-image: url(./cosmo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*-------footer------*/
+
+footer{
+    width: 90%;
+    position: relative;
+    margin: auto;
+    background-image: url(./footer-bak.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 3rem;
+}
+
+.contact{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dir{
+    margin-left: 2rem;
+}
+
+.copy{
+    margin-right: 2rem;
+}
+
+footer h2,p,h3{
+    background-color: white;
+    opacity: 0.5;
+    border-radius: 0.2rem;
+}
+
