@@ -85,6 +85,7 @@ a{
 
 a:visited{
     text-decoration: none;
+    decoration: none;
 }
 /*-------MAIN-------*/
 .middle{

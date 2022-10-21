@@ -58,7 +58,10 @@ nav h3:hover {
 a{ text-decoration: none;}
 
 a:visited{ text-decoration: none;
-                    color: black}
+            decoration: none;
+            color: black;
+        }
+                  
 
 header ul{ 
     display: flex;
