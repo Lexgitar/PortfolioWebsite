@@ -48,6 +48,13 @@ let cardTwo = document.getElementById('cardNob');
 let cardThree = document.getElementById('cardNoc');
 let cardFour = document.getElementById('cardNod');
 
+ cardOne.disabled=true;
+ cardTwo.disabled=true;
+ cardThree.disabled=true;
+ cardFour.disabled=true;
+
+
+
 const textAlter=()=>{
 
     cardOne.value = cardGen();
@@ -98,6 +105,12 @@ return total( sumOdd, sumEven );
   let valLocation2 = document.getElementById('valTwo');
   let valLocation3 = document.getElementById('valThree');
   let valLocation4 = document.getElementById('valFour');
+
+  
+   valLocation.disabled=true;
+   valLocation2.disabled=true;
+   valLocation3.disabled=true;
+   valLocation4.disabled=true;
 
   let valButton = document.getElementById('validateBut');
 
