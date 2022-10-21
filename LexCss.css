@@ -56,7 +56,9 @@ nav h3:hover {
   }
 
 a{ text-decoration: none;}
-
+a:before{
+    text-decoration: none;
+}
 a:visited{ text-decoration: none;
             decoration: none;
             color: black;
