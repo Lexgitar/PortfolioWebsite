@@ -55,14 +55,12 @@ nav h3:hover {
     margin-left: 0.1px;
   }
 
-a{ text-decoration: none;}
-a:before{
-    text-decoration: none;
+
+a, a:visited, a:link{
+     text-decoration: none;
+    decoration: none;
+    color: black;
 }
-a:visited{ text-decoration: none;
-            decoration: none;
-            color: black;
-        }
                   
 
 header ul{ 
