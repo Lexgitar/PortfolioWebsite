@@ -160,6 +160,11 @@ let makerTwo = document.getElementById('issTwo');
 let makerThree = document.getElementById('issThree');
 let makerFour = document.getElementById('issFour');
 
+makerOne.disabled=true;
+makerTwo.disabled=true;
+makerThree.disabled=true;
+makerFour.disabled=true;
+
 let revealer = document.getElementById('revealBut');
 
 const revGen = ()=>{
