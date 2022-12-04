@@ -292,12 +292,13 @@ footer a:visited{ text-decoration: none;
     #form {
         margin:3vh auto auto auto;
     }
+
         /*----projects------*/
         #projects{
             
             height: 70vh;
             display: grid;
-            grid-template-rows: repeat(8, 1fr);
+            grid-template-rows: repeat(6, 1fr);
             grid-template-columns: 1fr;
             gap: 2vh;
             overflow: auto;
@@ -308,9 +309,8 @@ footer a:visited{ text-decoration: none;
             #mixed{grid-area: 3/1/4/2;}
             #vandelay{grid-area: 4/1/5/2;}
             #club{grid-area: 5/1/6/2 ;}  
-            #arts{grid-area: 6/1/7/2;}
-            #tea{grid-area: 7/1/8/2 ;}
-            #fotomatic{grid-area: 8/1/9/2; }    
+            #tea{grid-area: 6/1/7/2;}
+              
 
            .projects a:visited{ text-decoration: none;
                 color: black}           
@@ -405,7 +405,7 @@ footer a:visited{ text-decoration: none;
     
     height: 70vh;
     display: grid;
-    grid-template: repeat(3, 1fr)/ repeat(6, 1fr);
+    grid-template: repeat(2, 1fr)/ repeat(3, 1fr);
     gap: 1vh;
     overflow: auto;
     padding: auto;
@@ -430,14 +430,13 @@ footer a:visited{ text-decoration: none;
         margin-left: -0.01px;
       }
 
-    .credit { grid-area: 1/1/2/3;}
-    .organism{grid-area: 1/3/2/5;}
-    .mixed{grid-area: 1/5/2/7;}
-    .vandelay{grid-area: 2/1/3/3;}
-    .club{grid-area: 2/3/3/5 ;}  
-    .arts{grid-area: 2/5/3/7;}
-    .tea{grid-area: 3/2/4/4 ;}
-    .fotomatic{grid-area: 3/4/4/6; }    
+    .credit { grid-area: 1/1/2/2;}
+    .organism{grid-area: 1/2/2/3;}
+    .mixed{grid-area: 1/3/2/4;}
+    .vandelay{grid-area: 2/1/3/2;}
+    .club{grid-area: 2/2/3/3 ;}  
+    .tea{grid-area: 2/3/3/4;}
+      
     
     
 
