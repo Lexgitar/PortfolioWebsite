@@ -417,7 +417,8 @@ footer a:visited{ text-decoration: none;
         display: flex;
         justify-content: center;
         align-items: center;
-        text-align: center;
+        text-align: center; 
+        
         background-color: rgb(233, 227, 227);
         font-weight: bold;
         border-radius: 5px;
