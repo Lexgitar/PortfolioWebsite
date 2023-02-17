@@ -136,7 +136,7 @@ const subButEnable=()=>{submitbut.disabled = false;};
 furthInput.addEventListener('change', subButEnable);
 
 
-const reload = ()=>{
+const reloads = ()=>{
 
   ferstInput.value = '';
   secundInput.value = '';
@@ -149,4 +149,4 @@ const reload = ()=>{
   relButton.disabled = true;
 };
 
-relButton.onclick = reload;
+relButton.onclick = reloads;

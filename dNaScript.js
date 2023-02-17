@@ -14,6 +14,7 @@ let secondP = document.getElementById("secondP");
 let thirdP = document.getElementById("thirdP");
 let fourthP = document.getElementById("fourthP");
 let fifthP = document.getElementById("fifthP");
+const refButt = document.getElementById('dnaRefre');
 
 //--- on page-load ---:
 const onPageLoad=()=>{
@@ -24,6 +25,7 @@ passInButton.disabled = true;
 prodButton.disabled = true;
 dnaPrint.disabled = true;
 ranger.disabled = true;
+refButt.disabled = true;
 
 };
 
@@ -46,12 +48,16 @@ const enabProdButt = ()=>{
     letterThree.disabled = true;
     letterFour.disabled = true;
     passInButton.disabled = true;
+    
 };
 passInButton.onclick = enabProdButt;
 //--- awesomeness
 
 const returnRandBase = (lisT) => {
+    refButt.disabled = false;
+
     return lisT[Math.floor(Math.random() * 4)] ;
+    
 };
 const mockUpStrand = (lisT) => {
     const newStrand = []
@@ -145,7 +151,7 @@ ranger.disabled = true;
 
 ranger.addEventListener('change', rangerGen);
 
-const refButt = document.getElementById('dnaRefre');
+
 const refresh = ()=> {
     window.location.reload();
 
@@ -154,6 +160,7 @@ const refresh = ()=> {
      letterThree.value = '';
      letterFour.value = '';
      dnaPrint.value = '';
+     refButt.disabled = true;
 };
 
 refButt.onclick = refresh;
