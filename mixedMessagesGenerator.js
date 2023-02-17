@@ -8,6 +8,8 @@ let ferstInput = document.getElementById("aname");
 let secundInput = document.getElementById("anoname");
 let therdInput = document.getElementById("sup");
 let furthInput = document.getElementById("ansup");
+
+const relButton = document.getElementById('mixRefre');
 //--
 //disabled on page load 
 ferstInput.disabled = true;
@@ -16,6 +18,7 @@ therdInput.disabled = true;
 furthInput.disabled = true;
 submitbut.disabled = true;
 genMesBut.disabled = true;
+relButton.disabled = true;
 
 //---custom select --
 const customButEnable = ()=>{
@@ -98,6 +101,8 @@ const defButDisables =()=>{
 const mesMixerFunc1 = ()=>{
   printSpot.innerHTML = mixedmessages(msg2);
   genMesBut.disabled = true;
+  relButton.disabled = false;
+
 };
 
 // new arrays formage
@@ -112,10 +117,15 @@ const mesMixerFuncB = ()=>{
   let msg3 = generator1(pex) + generator2(theToys);
   printSpot.innerHTML = mixedmessages(msg3);
   genMesBut.disabled = true;
+  relButton.disabled = false;
+
   
 }; 
 
-genMesBut.onclick = mesMixerFuncB;
+genMesBut.onclick = ()=>{
+ 
+  mesMixerFuncB();
+};
 customBut.onclick = customButEnable;
 defaultBut.onclick = defButDisables ;
 submitbut.onclick = submitting;
@@ -126,5 +136,17 @@ const subButEnable=()=>{submitbut.disabled = false;};
 furthInput.addEventListener('change', subButEnable);
 
 
+const reload = ()=>{
 
+  ferstInput.value = '';
+  secundInput.value = '';
+  therdInput.value = '';
+  furthInput.value = '';
+  defaultBut.checked =false;
+  customBut.checked =false;
 
+  location.reload();
+  relButton.disabled = true;
+};
+
+relButton.onclick = reload;

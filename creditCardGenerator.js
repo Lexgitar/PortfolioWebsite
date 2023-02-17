@@ -1,3 +1,5 @@
+
+
 let card = [];
 let bott = [];
 let otherBatch = [];
@@ -43,15 +45,18 @@ let motoras =()=>{return Math.floor(Math.random()*10)};
 // rest 
 
 let theGenerator = document.getElementById('genBut');
+
 let cardOne = document.getElementById('cardNoa');
 let cardTwo = document.getElementById('cardNob');
 let cardThree = document.getElementById('cardNoc');
 let cardFour = document.getElementById('cardNod');
+const relButt = document.getElementById('creditRefre');
 
  cardOne.disabled=true;
  cardTwo.disabled=true;
  cardThree.disabled=true;
  cardFour.disabled=true;
+ relButt.disabled = true;
 
 
 
@@ -112,7 +117,7 @@ return total( sumOdd, sumEven );
    valLocation3.disabled=true;
    valLocation4.disabled=true;
 
-  let valButton = document.getElementById('validateBut');
+  const valButton = document.getElementById('validateBut');
 
   
   const validatorB = ()=>{
@@ -174,7 +179,35 @@ const revGen = ()=>{
    makerFour.value = issuer(cardFour.value);
 
    revealer.disabled = true;
+   relButt.disabled = false;
+   
 
 };
 
 revealer.onclick = revGen;
+//onClick="window.location.reload()"
+
+
+ const reload = ()=>{
+ 
+ const zeroValues = ()=>{
+  cardOne.value = '';
+ cardTwo.value = '';
+ cardThree.value = '';
+ cardFour.value = '';
+
+ valLocation.value = '';
+ valLocation2.value = '';
+ valLocation3.value = '';
+ valLocation4.value = '';
+
+ makerOne.value = '';
+ makerTwo.value = '';
+ makerThree.value = '';
+ makerFour.value = '';
+}
+ ;
+  zeroValues();
+  location.reload();
+ };
+ relButt.onclick = reload;

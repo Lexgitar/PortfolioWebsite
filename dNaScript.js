@@ -28,6 +28,8 @@ ranger.disabled = true;
 };
 
 onPageLoad();
+
+
 // --- enabling back ---
 const enabTwo = ()=>{letterTwo.disabled = false};
 letterOne.addEventListener('change', enabTwo);
@@ -47,6 +49,7 @@ const enabProdButt = ()=>{
 };
 passInButton.onclick = enabProdButt;
 //--- awesomeness
+
 const returnRandBase = (lisT) => {
     return lisT[Math.floor(Math.random() * 4)] ;
 };
@@ -124,6 +127,11 @@ const generatorX =(howMany)=>{
       return strongList;
 };
 
+// const reset_input_values = document.querySelectorAll('input type text');
+// for (var i = 0; i < reset_input_values.length; i++) {
+//   reset_input_values[i].value = '';
+// }
+
 generatorX(ranger.value);
 firstP.innerHTML = strongList[0];
 secondP.innerHTML = strongList[1];
@@ -131,7 +139,21 @@ thirdP.innerHTML = strongList[2];
 fourthP.innerHTML = strongList[3];
 fifthP.innerHTML = strongList[4];
 ranger.disabled = true;
-
+//onClick="window.location.reload()" --dont' use here
+//reset_input_values;
 };
 
 ranger.addEventListener('change', rangerGen);
+
+const refButt = document.getElementById('dnaRefre');
+const refresh = ()=> {
+    window.location.reload();
+
+     letterOne.value = '' ;
+     letterTwo.value = '' ;
+     letterThree.value = '';
+     letterFour.value = '';
+     dnaPrint.value = '';
+};
+
+refButt.onclick = refresh;
