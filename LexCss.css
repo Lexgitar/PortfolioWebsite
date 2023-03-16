@@ -55,11 +55,18 @@ header{
     padding-left: 0.5vw;
 }
 
+nav h3{
+    transition: 0.1s;
+}
+
 nav h3:hover {
        
-    border-radius: 1px; 
+    /* border-radius: 1px; 
     box-shadow: 1px 1px 1px black;
-    margin-left: 0.1px;
+    margin-left: 0.1px; */
+
+    background-color: white;
+    border-radius: 3px;
 }
 
   footer a:hover {
@@ -68,6 +75,9 @@ nav h3:hover {
     margin-left: 0.1px;
   }
 
+  a{
+    transition: 0.05s;
+  }
 
 a, a:visited, a:link{
      text-decoration: none;
@@ -160,7 +170,7 @@ section li i{
 section a:hover {
      border-radius: 2px;   
     box-shadow: 1px 1px 1px black;
-    margin-left: 1px;
+    margin-left: 0.5px;
     background-color: lightgray;
 }
 
