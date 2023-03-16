@@ -483,6 +483,7 @@ footer a:visited{ text-decoration: none;
     .lefttab {
         grid-area: left;
         display: grid;
+        transition: 0.2s;
         
         
  }
@@ -494,6 +495,14 @@ footer a:visited{ text-decoration: none;
                 -8px -8px 16px #ffffff;
  }
     
+
+ .lefttab a:hover{
+    background-color: white;
+    border-radius: 5px;
+ }
+ .lefttab a{
+    transition: 0.2s;
+ }
 
 
  .righttab{
