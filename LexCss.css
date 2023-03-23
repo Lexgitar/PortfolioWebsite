@@ -716,6 +716,6 @@ aside{
     scroll-snap-type: y mandatory;
 }
 
-aside div{
+aside .jscontainer{
     scroll-snap-align: start;
 }
