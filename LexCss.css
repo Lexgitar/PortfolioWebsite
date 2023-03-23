@@ -711,9 +711,11 @@ box-shadow:  7px 7px 14px #868686,
     background-color:beige;
     font-weight: bold;
 }
-.righttab{
+/* snap stuff */
+aside{
     scroll-snap-type: y mandatory;
 }
-aside{
+
+aside div{
     scroll-snap-align: start;
 }
